@@ -7,11 +7,11 @@ import (
 
 //友情链接的结构体
 type Link struct {
-	Id int
+	Id int `json:"id"`
 	//友链名
-	Sitename string `orm:"size(80);colunme(sitename)"`
-	Url      string `orm:"size(200)"`
-	Rank     int
+	Sitename string `orm:"size(80);colunme(sitename)" json:"sitename"`
+	Url      string `orm:"size(200)" json:"url"`
+	Rank     int `json:"rank"`
 }
 
 //返回表名

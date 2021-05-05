@@ -23,7 +23,7 @@ func init() {
 	//拼接数据库连接
 	//"root:password@tcp(localhost:3306)/beego_blog?charset=utf8"
 	dburl := dbuser+":"+ dbpassword +"@tcp("+ dbhost + ":" + dbport + ")/" + dbname + "?charset=utf8"
-	fmt.Println(dburl)
+	//fmt.Println(dburl)
 	//设置default数据库
 	err := orm.RegisterDataBase("default", "mysql", dburl, 50, 20)
 	if err != nil{
