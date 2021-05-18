@@ -11,7 +11,7 @@ func init() {
 	beego.Router("/", &controllers.MainController{},"*:Index")
 
 	//test
-	beego.Router("/link", &controllers.LinkController{},"*:Link")
+	//beego.Router("/link", &controllers.LinkController{},"*:Link")
 
 
 

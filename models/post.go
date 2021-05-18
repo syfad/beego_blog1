@@ -89,7 +89,7 @@ func (post *Post) TagsLink() string {
 	if post.Tags == ""{
 		return ""
 	}
-	//根据,切割
+	//去掉首尾的逗号
 	tagslink := strings.Trim(post.Tags, ",")
 	return tagslink
 }
